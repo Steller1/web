@@ -1,59 +1,145 @@
 body {
     font-family: Arial, sans-serif;
+    display: flex; 
     margin: 0;
+    padding: 0;
     justify-content: center;
     align-items: center;
-    display: flex;
-    background-color: #f4f4f4;
+    height: 100vh;
+}
+.Login-container{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.Login-container::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 300px sold white;
+    top: 0;
+    left:0;
+}
+.Login-form input{
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 14px;
 }
 
-.form-container {
-    background-color: #fff;
-    padding: 30px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
-    width: 350px;
-    max-width: 100%;
-}
-
-.form-container label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #555;
-
-}
-
-.form-container input{
-    margin-bottom: 15px;
-    width: calc(100% - 16px);
-    padding: 10px;
-    border: 1px #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-
-}
-.form-container button{
-    margin-right: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    color: white;
-    border-radius: 5px;
+.Login-form button{
+    padding: 8px 20px;
+    background: #333;
     border: none;
-    background-color: #5cb85c;
-    padding: 10px;
-    width: calc(50% - 10px);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-th , td {
-    border: 1px solid #ddd;
-    padding: 8px;
+.Login-text a{
+    color: #3498db;
+    text-decoration: none;
+}
+.Login-text a :hover{
+    text-decoration: underline;
+}
+
+.signup-form label{
+    margin-bottom: 5px;
+    color:#555 ;
     text-align: left;
+    display: block;
+}
+.signup-form input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.signup-form button{
+    padding: 8px 20px;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.signup-form button:hover{
+    background: #2980b9;
+}
+.signup-text{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+.signup-text a{
+    color: #3498db;
+    text-decoration: none;
+}
+.signup-text a :hover{
+    text-decoration: underline;
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
 
 }
-th{
-    background-color: #f2f2f2;
+
+header img{
+    height: 58px;
+    width: 95px;
+    top: 0px;
+    left: 20px;
+    position: absolute;
+    background-color: #fff;
+}
+
+nav a{
+    color: #fff;
+    margin: 0  15px;
+    text-decoration: none;
+}
+
+nav a :hover{
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px  0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+main input{
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
 }
